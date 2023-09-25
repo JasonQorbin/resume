@@ -1,0 +1,61 @@
+section {
+  min-height: 100vh;
+  display: block;
+}
+/*
+Section 1 - Intro Splash
+==================================================================
+ */
+
+
+#section-intro {
+  //height: 100vh;
+  background-color: blue;
+  position: relative;
+
+  div {
+    position: relative;
+    top: 50vh;
+    color: white;
+  }
+}
+
+/*
+Section 2 - About Me
+==================================================================
+ */
+
+
+#section-bio {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+
+  div {
+    color: black;
+  }
+}
+
+/*
+Section 3 - Skills
+==================================================================
+ */
+
+
+#section-skills{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  background-color: burlywood;
+
+  div {
+    color: black;
+  }
+}
+
+.competency-bar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

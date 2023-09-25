@@ -1,0 +1,37 @@
+/*
+common-layouts.css
+
+This style is used when I want 2 things to sit side-by-side in the content flow.
+Wrap them in a div and apply this style.
+*/
+.side-by-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+/*If you want the two things to float to the left and right (away from each other) then apply the left and right
+ *classes to the elements inside the side-byu-side div. You may need to wrap them in divs as well. Make sure to put
+ *the left-hand item first in the html or the content will just appear to be centered.
+ */
+  .one-side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left {
+    @extend .one-side;
+    max-width: 50%;
+    justify-content: flex-start;
+  }
+
+  .right {
+    @extend .one-side;
+    justify-content: flex-end;
+  }
+}
+
+
+
+/*=======================================================================================================*/

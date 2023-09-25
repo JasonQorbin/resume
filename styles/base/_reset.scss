@@ -1,0 +1,75 @@
+/*
+CSS Reset
+=========
+
+Gets rid of the default rendering of html elements that will leave odd padding and margins on elements. The intent is
+to force you to decide what each element will look like, which you are probably doing anyway, and not have any surprises
+while styling.
+
+Also good when applying pre-made style sheets to pages to ensure no conflicts with default styles.
+
+The basis for this file is the following Github repo:
+Github - simple-css-reset/reset.css
+https://github.com/mirego/simple-css-reset/blob/master/reset.css
+
+I have changed the file significantly (mostly left out a lot of redefinitions of default html styles) because css
+resets seem to be a highly opinionated topic where people apply changes that benefit them in their own projects.
+
+This style sheet should be included first so that the page-specific styles appear after and over-ride these changes.
+
+*/
+html, body, div, span,
+object, iframe,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, abbr, code,
+img,
+sub,
+sup,
+ol,
+ul,
+li,
+label,
+table, tbody, tfoot, thead, tr, th, td,
+article, aside, footer, header, nav, section,
+time, audio, video {
+  background: transparent;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  /*
+  The main change the font-size brings is making all the headings the same size. You were likely going to
+  change all the headings you use anyway. Making them the same size:
+  - Reduces the urge to choose a certain heading level because of it's size and forces you to think of the
+  semantics implied by the element you choose.
+  - Forces you to think about the size of each heading from a typographical point of view.
+  */
+  font-size: 1em;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+  color: inherit;
+}

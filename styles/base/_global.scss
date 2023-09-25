@@ -1,0 +1,39 @@
+/*global.scss
+ *
+ * Site-wide global styles
+ */
+body {
+  font-family: "Libre Baskerville", serif;
+}
+h1, h2, h3, h4 {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+main {
+  display: block;
+  width: 100%;
+}
+
+.content-wrap {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 950px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+/*Temporary  TODO:Move this to an appropriate place*/
+.right div {
+  display: inline-block;
+  min-height: 300px;
+  min_weight: 400px;
+  background-color: red;
+}
+
+
+
+/*==============================================================================================*/
