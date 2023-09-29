@@ -1,0 +1,55 @@
+/*Progress Bar styling*/
+
+$progressBarHeight: 20px;
+$progressBarWidth: 300px;
+$progressBarCornerRadius: calc($progressBarHeight/3);
+
+.progress-bar {
+  display: inline-flex;
+  justify-content: stretch;
+  height: $progressBarHeight;
+  width: $progressBarWidth;
+}
+
+.progress-bar-segment {
+  display: table-cell;
+  height: $progressBarHeight;
+  width: calc($progressBarWidth/10);
+  border: darkslategray solid 1px;
+}
+
+.segment-state-on {
+  background-color: lightgreen;
+}
+
+.segment-state-off {
+  background-color: gray;
+}
+
+.first-segment {
+	border-top-left-radius: $progressBarCornerRadius;
+	border-bottom-left-radius: $progressBarCornerRadius;
+}
+
+.last-segment {
+  border-top-right-radius: $progressBarCornerRadius;
+  border-bottom-right-radius: $progressBarCornerRadius;
+}
+
+.skill-name {
+  margin-right: 20px;
+}
+
+.progress-bar {
+  margin-left: 20px;
+}
+
+.compentency-bar{
+  .left {
+    text-align: right;
+	
+  }
+  
+  .right {
+  }
+}

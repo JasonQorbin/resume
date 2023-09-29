@@ -69,23 +69,80 @@
     <section id="section-skills">
         <div class="content-wrap">
             <h2>Skills and Experience</h2>
-            <!--Programming Progress bars.... -->
+            <!--Programming Progress bars... Generated with JavaScript using the value attribute in the .progress-bar element-->
             <h3>Front-end Web</h3>
-            <div class="competency-bar"><span class="skill-name">Html, CSS, Javascript</span><span
-                    class="progress-bar"></span></div>
-            <div class="competency-bar"><span class="skill-name">Angular</span><span class="progress-bar"></span></div>
-            <div class="competency-bar"><span class="skill-name">PHP/WordPress</span><span class="progress-bar"></span>
-            </div>
+            <div class="competency-bar side-by-side">
+				<div class="skill-name-container left">
+					<span class="skill-name">Html, CSS, Javascript</span>
+				</div>
+				<div class="progress-bar-container right">
+					<span class="progress-bar" value="8"></span>
+				</div>
+			</div>
+			<div class="competency-bar side-by-side">
+				<div class="skill-name-container left">
+					<span class="skill-name">Angular</span>
+				</div>
+				<div class="progress-bar-container right">
+					<span class="progress-bar" value="4"></span>
+				</div>
+			</div>
+			<div class="competency-bar side-by-side">
+				<div class="skill-name-container left">
+					<span class="skill-name">PHP/WordPress</span>
+				</div>
+				<div class="progress-bar-container right">
+					<span class="progress-bar" value="6"></span>
+				</div>
+			</div>
             <h3>Back-end</h3>
-            <div class="competency-bar"><span class="skill-name">C++</span><span class="progress-bar"></span></div>
-            <div class="competency-bar"><span class="skill-name">Java</span><span class="progress-bar"></span></div>
-            <div class="competency-bar"><span class="skill-name">Python</span><span class="progress-bar"></span></div>
-            <div class="competency-bar"><span class="skill-name">Databases</span><span class="progress-bar"></span>
-            </div>
+			<div class="competency-bar side-by-side">
+				<div class="skill-name-container left">
+					<span class="skill-name">C++</span>
+				</div>
+				<div class="progress-bar-container right">
+					<span class="progress-bar" value="7"></span>
+				</div>
+			</div>
+			<div class="competency-bar side-by-side">
+				<div class="skill-name-container left">
+					<span class="skill-name">Java</span>
+				</div>
+				<div class="progress-bar-container right">
+					<span class="progress-bar" value="8"></span>
+				</div>
+			</div>
+			<div class="competency-bar side-by-side">
+				<div class="skill-name-container left">
+					<span class="skill-name">Python</span>
+				</div>
+				<div class="progress-bar-container right">
+					<span class="progress-bar" value="3"></span>
+				</div>
+			</div>
+			<div class="competency-bar side-by-side">
+				<div class="skill-name-container left">
+					<span class="skill-name">Relational Databases</span>
+				</div>
+				<div class="progress-bar-container right">
+					<span class="progress-bar" value="5"></span>
+				</div>
+			</div>
             <h3>Other</h3>
-            <div class="competency-bar"><span class="skill-name">Financial Modelling*</span><span class="progress-bar"></span></div>
-        </div>
-    </section>
+			<div class="competency-bar side-by-side">
+				<div class="skill-name-container left">
+					<span class="skill-name">Financial Modeling*</span>
+				</div>
+				<div class="progress-bar-container right">
+					<span class="progress-bar" value="10"></span>
+				</div>
+			</div> 
+			<p>
+				<small>*Financial modeling refers to constructing bespoke Excel based models for corporate budgeting purposes such as producing
+				simulated financial statements. This also involved coding custom VBA macros from time to time.</small>
+			</p>
+        </div> <!-- content-wrap for skills section -->
+    </section> <!-- End of Skills section -->
     <section id="section-projects">
         <div class="content-wrap">
             <h2>Portfolio</h2>
@@ -93,7 +150,7 @@
                 <h3>Corporate Finance Modelling Tool</h3>
                 <!--Side-by-side profile with a carousel of images because I can't share the code.-->
                 <div class="side-by-side">
-                    <div class="left accordion">
+                    <div class="accordion">
                         <!--Accordion style short paragraphs that move the carousel-->
                         <h4>Overview</h4>
                         <div>

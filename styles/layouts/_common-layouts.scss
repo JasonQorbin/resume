@@ -16,19 +16,19 @@ Wrap them in a div and apply this style.
  */
   .one-side {
     display: flex;
-    flex-direction: column;
     width: 100%;
   }
 
   .left {
     @extend .one-side;
-    max-width: 50%;
-    justify-content: flex-start;
+    width: 50%;
+    justify-content: flex-end;
   }
 
   .right {
     @extend .one-side;
-    justify-content: flex-end;
+    justify-content: flex-start;
+	width: 50%;
   }
 }
 
