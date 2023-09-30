@@ -25,6 +25,10 @@ Wrap them in a div and apply this style.
     justify-content: flex-end;
   }
 
+  .left.accordion {
+    flex-direction: column;
+  }
+
   .right {
     @extend .one-side;
     justify-content: flex-start;

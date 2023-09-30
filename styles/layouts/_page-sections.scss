@@ -59,3 +59,69 @@ Section 3 - Skills
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+/*
+Section 4 - Projects
+=================================================================
+ */
+
+#section-projects {
+  min-height: 750px;
+}
+
+.left {
+  p{
+    font-size: 11pt;
+  }
+}
+
+#section-projects{
+  img {
+    transition: opacity 0.3s ease;
+  }
+}
+
+/*
+Section 5 - Contact
+=================================================================
+ */
+
+#section-contact {
+  background-color: rebeccapurple;
+  min-height: 1px;
+  height: 300px;
+  position: relative;
+
+  color: white;
+
+  a {
+    color: white;
+    font-family: "Libre Franklin", sans-serif;
+  }
+
+  ul {
+    margin-top: 30px;
+    display: flex;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0 10px;
+  }
+
+  li:before {
+    content: '<';
+  }
+
+  li:after {
+    content: "/>";
+  }
+
+
+  small {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+}

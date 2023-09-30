@@ -1,9 +1,36 @@
 $(function() {
     $(".accordion").accordion({
         collapsible: true,
-        active:false
+        active:false,
+		activate: changeImage
     });
 });
+
+const imageIDs = [
+	'model-img-1',
+	'model-img-2',
+	'model-img-3',
+	'model-img-4'
+];
+
+function changeImage(event, ui){
+	let oldHeaderID = ui.oldHeader.attr('id');
+	if (oldHeaderID == null) {
+		oldHeaderID = Number.NaN;
+	} else {
+		oldHeaderID = parseInt(oldHeaderID.substring(oldHeaderID.length - 1));
+	}
+
+	let newHeaderID = ui.newHeader.attr('id');
+	newHeaderID = parseInt(newHeaderID.substring(newHeaderID.length - 1));
+
+	if (!Number.isNaN(oldHeaderID)) {
+		document.querySelector('#' + imageIDs[oldHeaderID-1]).style.display='none'
+	}
+
+	let newImage = document.querySelector('#' + imageIDs[newHeaderID-1]);
+	newImage.style.display='inline'
+}
 
 function createProgressBarElements(progressBarElement, progress){
 	for (let i = 0; i < 10; ++i) {
