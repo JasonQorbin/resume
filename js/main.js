@@ -13,23 +13,28 @@ const imageIDs = [
 	'model-img-4'
 ];
 
-function changeImage(event, ui){
+function changeImage(event, ui) {
 	let oldHeaderID = ui.oldHeader.attr('id');
-	if (oldHeaderID == null) {
+	if (oldHeaderID == null) { //This would be null when you activate the first panel, i.e. there is no oldHeader and no old image to hide.
 		oldHeaderID = Number.NaN;
 	} else {
 		oldHeaderID = parseInt(oldHeaderID.substring(oldHeaderID.length - 1));
 	}
 
-	let newHeaderID = ui.newHeader.attr('id');
-	newHeaderID = parseInt(newHeaderID.substring(newHeaderID.length - 1));
-
 	if (!Number.isNaN(oldHeaderID)) {
-		document.querySelector('#' + imageIDs[oldHeaderID-1]).style.display='none'
+		document.querySelector('#' + imageIDs[oldHeaderID - 1]).style.display = 'none'
 	}
 
-	let newImage = document.querySelector('#' + imageIDs[newHeaderID-1]);
-	newImage.style.display='inline'
+	let newHeaderID = ui.newHeader.attr('id');
+	if (newHeaderID == null) return; // This means the user clicked the same header twice and closed the accordion.
+
+	newHeaderID = parseInt(newHeaderID.substring(newHeaderID.length - 1));
+
+
+	if (newHeaderID != oldHeaderID) {
+		let newImage = document.querySelector('#' + imageIDs[newHeaderID - 1]);
+		newImage.style.display = 'inline';
+	}
 }
 
 function createProgressBarElements(progressBarElement, progress){
